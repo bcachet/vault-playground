@@ -1,6 +1,6 @@
 services:
   vault:
-    image: hashicorp/vault:1.18
+    image: docker.io/hashicorp/vault:1.18
     container_name: vault
     cap_add:
       - IPC_LOCK

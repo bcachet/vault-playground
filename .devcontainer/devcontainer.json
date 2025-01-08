@@ -27,7 +27,8 @@
 		"vscode": {
 			"extensions": [
 				"ms-azuretools.vscode-docker",
-				"HashiCorp.terraform"
+				"HashiCorp.terraform",
+				"HashiCorp.HCL"
 			]
 		}
 	}
