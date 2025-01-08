@@ -1,0 +1,10 @@
+*
+
+!.gitignore
+
+!.devcontainer/
+!.devcontainer/*
+
+!docker-compose.yml
+
+!main.tf
