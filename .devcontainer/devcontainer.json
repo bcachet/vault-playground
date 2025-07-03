@@ -1,27 +1,16 @@
 // For format details, see https://aka.ms/devcontainer.json
 {
 	"name": "vault-playground",
-
-	"build": {
-		"dockerfile": "Dockerfile"
-	},
-
-	"runArgs": [
-		"--network=host"
-	],
-
+	"image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
 	"remoteEnv": {
 		"VAULT_ADDR": "http://127.0.0.1:8200"
 	},
-
-	"capAdd": ["IPC_LOCK"],
-
 	"features": {
-    	"ghcr.io/devcontainers/features/docker-outside-of-docker": {}
+		"ghcr.io/devcontainers/features/docker-in-docker:2": {},
+		"ghcr.io/devcontainers-extra/features/terraform-asdf:2": {},
+		"ghcr.io/devcontainers-extra/features/vault-asdf:2": {}
 	},
-
 	"postAttachCommand": "docker compose up --wait --detach",
-
 	"remoteUser": "vscode",
 	"customizations": {
 		"vscode": {

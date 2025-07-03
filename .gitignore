@@ -5,6 +5,8 @@
 !.devcontainer/
 !.devcontainer/*
 
+!README.md
+
 !docker-compose.yml
 
 !*.tf
